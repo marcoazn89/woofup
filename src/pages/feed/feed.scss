@@ -1,0 +1,144 @@
+.feed {
+  
+
+    background-image: url("../assets/imgs/img3.png");
+    .title{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        ion-icon {
+            font-size: 25px; //Preferred size here
+            
+        }
+        h1{
+            font-size: 28px;
+            color:white;
+
+        }
+        .a{
+            margin-top:20px;
+            margin-bottom:0;
+        }
+        .b{
+            margin-top:0;
+        }
+    }
+    ion-card {
+        position: relative;
+        text-align: center;
+        height:299px;
+        width:254px !important;
+        border-radius:8px;
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+      }
+      .event1{
+          background-image: url("../assets/imgs/match.png");
+          
+      }
+
+      .fab{
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+      }
+
+      .event2{
+        background-image: url("../assets/imgs/nerby.png");
+        
+    }
+
+    .event3{
+        background-image: url("../assets/imgs/adpot.png");
+        
+    }
+
+    .event4{
+        background-image: url("../assets/imgs/popular.png");
+        
+    }
+    
+      .card-title {
+          text-align: left;
+        position: absolute;
+        top: 78%;
+        font-size: 14px;
+        width: 100%;
+        
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        text-align: left;
+        font-size: 18px;
+        position: absolute;
+        top: 85%;
+        width: 100%;
+        color: #fff;
+      }
+      .tag1 {
+        text-align: left;
+        font-size: 15px;
+        position: absolute;
+        top: 65%;
+        left:10px;
+        color: #fff;
+        height:25px;
+        border-radius:8px;
+        background-color:#DB7E7A;
+      }
+
+      .shadow{
+        height:299px;
+        width:254px !important; 
+        box-shadow: inset 0 -200px 300px -100px rgba(0,0,0,0.5)!important;
+       }
+
+       .tag2 {
+        text-align: left;
+        font-size: 15px;
+        position: absolute;
+        top: 65%;
+        left:10px;
+        color: #fff;
+        height:25px;
+        border-radius:8px;
+        background-color:#BAB23F;
+      }
+
+      .tag3 {
+        text-align: left;
+        font-size: 15px;
+        position: absolute;
+        top: 65%;
+        left:10px;
+        color: #fff;
+        height:25px;
+        border-radius:8px;
+        background-color:#AC9EC6;
+      }
+
+      .tag4 {
+        text-align: left;
+        font-size: 15px;
+        position: absolute;
+        top: 65%;
+        left:10px;
+        color: #fff;
+        height:25px;
+        border-radius:8px;
+        background-color:#7BB6C8;
+      }
+
+      ion-fab[bottom] {
+        bottom: 21px;    right: 18px;
+    }
+    .slides{
+        height:330px;
+    }
+  .popular{
+    font-size:28px !important;
+    color:#FDAC4C,
+  }
+  .smallimg{
+    border-radius:8px;
+
+  }
+}
