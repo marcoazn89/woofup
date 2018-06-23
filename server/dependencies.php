@@ -65,8 +65,12 @@ $container['http-client'] = function () {
     return new GuzzleHttp\Client();
 };
 
-$container['profileCtrl'] = function($c) {
-    return new Woofup\Controllers\ProfileCtrl($c['logger']);
+$container['ProfileService'] = function($c) {
+    return new Woofup\Libraries\Profile\ProfileService();
+};
+
+$container['ProfileCtrl'] = function($c) {
+    return new Woofup\Controllers\ProfileCtrl($c['ProfileService']);
 };
 
 /**==
