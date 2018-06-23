@@ -12,4 +12,6 @@ $app->any('/', function () {
 // actual stuff
 //$app->post('/webhook/fb[/]', 'facebookctrl:handleEvents');
 
-$app->get('/profile[/]', 'profileCtrl:getProfile');
+$app->get('/profile[/]', 'ProfileCtrl:getProfile');
+
+$app->post('/profile[/]', 'ProfileCtrl:setProfile');

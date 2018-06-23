@@ -1,3 +1,4 @@
+
 <ion-content padding class="slide" >
 
        
@@ -34,7 +35,7 @@
                     
                         </div>   
                         <p padding text-center style="color:white">What's your dog's name?</p>
-                        <ion-input placeholder="Text Input" text-center></ion-input>
+                        <ion-input [(ngModel)]="profile.name" placeholder="Monkey" text-center></ion-input>
                 </div>
               </ion-card>
       
@@ -67,14 +68,16 @@
                     
                         </div>   
                         <p padding text-center style="color:white">What's your dog's gender?</p>
-                        <ion-item>
-                                <ion-label>Boy</ion-label>
-                                <ion-radio value="golang" checked="true" color="white"></ion-radio>
-                              </ion-item>
-                              <ion-item>
-                                    <ion-label>Girl</ion-label>
-                                    <ion-radio value="golang" checked="true" color="white"></ion-radio>
-                                  </ion-item>
+                        <ion-list radio-group [(ngModel)]="profile.gender">
+                          <ion-item>
+                              <ion-label>Boy</ion-label>
+                              <ion-radio value="boy" checked="true" color="white"></ion-radio>
+                            </ion-item>
+                          <ion-item>
+                            <ion-label>Girl</ion-label>
+                            <ion-radio value="girl" checked="true" color="white"></ion-radio>
+                          </ion-item>
+                        </ion-list>
                 </div>
               </ion-card>
 
@@ -103,7 +106,7 @@
                 
                     </div>   
                     <p padding text-center style="color:white">What's your dog's age?</p>
-                    <ion-input placeholder="Text Input" text-center></ion-input>
+                    <ion-input [(ngModel)]="profile.age" placeholder="2" text-center></ion-input>
             </div>
           </ion-card>
 
@@ -132,7 +135,7 @@
                 
                     </div>   
                     <p padding text-center style="color:white">What's your dog's Breed?</p>
-                    <ion-input placeholder="Text Input" text-center></ion-input>
+                    <ion-input [(ngModel)]="profile.gender" placeholder="Golden Retriever" text-center></ion-input>
                     <ion-list></ion-list>
             </div>
           </ion-card>
@@ -163,7 +166,7 @@
                 
                     </div>   
                     <p padding text-center style="color:white">What's your dog's Weight?</p>
-                    <ion-input placeholder="Text Input" text-center></ion-input>
+                    <ion-input [(ngModel)]="profile.weight" placeholder="40" text-center></ion-input>
                     
             </div>
           </ion-card>
@@ -204,19 +207,19 @@
                               <p padding text-center style="color:white">What size of dog you are looking for meetup?</p>
                              
                       </div>
-                      <ion-item>
+                      <ion-item radio-group [(ngModel)]="matchSettings.size">
                             <ion-label>Big Dog</ion-label>
-                            <ion-radio value="golang" checked="true" color="white"></ion-radio>
+                            <ion-radio value="big" checked="true" color="white"></ion-radio>
                           </ion-item>
 
                           <ion-item>
                                 <ion-label>Medium Dog</ion-label>
-                                <ion-radio value="golang" checked="true" color="white"></ion-radio>
+                                <ion-radio value="medium" color="white"></ion-radio>
                               </ion-item>
 
                               <ion-item>
                                     <ion-label>Small Dog</ion-label>
-                                    <ion-radio value="golang" checked="true" color="white"></ion-radio>
+                                    <ion-radio value="small" color="white"></ion-radio>
                                   </ion-item>
                     </ion-card>
 
@@ -245,7 +248,7 @@
                 
                     </div>   
                     <p padding text-center style="color:white">What's the Breed that you are looking for?</p>
-                    <ion-input placeholder="Text Input" text-center></ion-input>
+                    <ion-input [(ngModel)]="matchSettings.breed" placeholder="Husky" text-center></ion-input>
                     <ion-list></ion-list>
             </div>
           </ion-card>
@@ -279,7 +282,7 @@
                     
             </div>
             <ion-item>
-                    <ion-range min="0" max="100" pin="true" [(ngModel)]="brightness" color="white">
+                    <ion-range min="0" max="100" pin="true" [(ngModel)]="matchSettings.distance" color="white">
                       <ion-icon range-left small name="paw"></ion-icon>
                       <ion-icon range-right name="paw"></ion-icon>
                     </ion-range>
@@ -288,7 +291,7 @@
 
 
             <!-- card 4 Button to Homepage-->
- <ion-card class="card4 cardnoexpand">
+ <ion-card class="card4 cardnoexpand" (click)="viewFeed()">
           
           
 
@@ -305,7 +308,4 @@
     </ion-slides>
   
   </ion-content>
-  
-
-
-
+<button (click)="next()">Next</button>
