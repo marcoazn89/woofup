@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { FeedPage } from './feed';
+import {EventService} from '../../providers/dog/event.service';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { FeedPage } from './feed';
     FeedPage
   ],
   providers: [
+    EventService
   ]
 })
 export class FeedPageModule {}
