@@ -11,10 +11,12 @@ export class DogService {
   }
 
   saveProfile(profileData: any) {
+      let url = "lala";
       return this.http.post(url, profileData);
   }
  
   saveMatchPreferences(matchData: any) {
-      return 4this.http.post(url, matchData);
+      let url = "lalal";
+      return this.http.post(url, matchData);
   }
 }
