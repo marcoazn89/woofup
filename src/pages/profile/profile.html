@@ -10,7 +10,7 @@
         
          <!-- card 1 no expand-->
   
-        <ion-card class="card1 cardnoexpand">
+        <ion-card class="card1 cardnoexpand" [hidden]="prop.name" (click)="toggle('name')">
           
           
 
@@ -21,34 +21,23 @@
           <ion-icon name="md-arrow-forward" item-end padding-right color="white"></ion-icon>
         </ion-card>
 
-
         <!-- card 1  expand-->
 
-        <ion-card class="card1 cardexpand">
-          
-          
+        <ion-card class="card1 cardexpand" [hidden]="!prop.name">
+            <div class="info" padding>
 
-                <div class="info" padding>
-
-                    <div class="smallicon">
-                            <img item-start padding src="../assets/imgs/icon1.png" height="31" width="31">
-                    
-                        </div>   
-                        <p padding text-center style="color:white">What's your dog's name?</p>
-                        <ion-input [(ngModel)]="profile.name" placeholder="Monkey" text-center></ion-input>
-                </div>
-              </ion-card>
+                <div class="smallicon">
+                        <img item-start padding src="../assets/imgs/icon1.png" height="31" width="31">
+                
+                    </div>   
+                    <p padding text-center style="color:white">What's your dog's name?</p>
+                    <ion-input [(ngModel)]="profile.name" placeholder="Monkey" text-center></ion-input>
+            </div>
+        </ion-card>
       
 
-
-
-
       <!-- card 2 no expand-->
-        <ion-card class="card2 cardnoexpand">
-          
-          
-
-         
+        <ion-card class="card2 cardnoexpand"  [hidden]="prop.gender" (click)="toggle('gender')">
             <h3 item-start padding-left>
               gender
             </h3>
@@ -57,7 +46,7 @@
       
         <!-- card 2  expand-->
 
-        <ion-card class="card2 cardexpand">
+        <ion-card class="card2 cardexpand" [hidden]="!prop.gender">
           
           
 
@@ -82,7 +71,7 @@
               </ion-card>
 
  <!-- card 3 no expand-->
- <ion-card class="card3 cardnoexpand">
+ <ion-card class="card3 cardnoexpand"  [hidden]="prop.age" (click)="toggle('age')">
           
           
 
@@ -95,7 +84,7 @@
   
     <!-- card 3  expand-->
 
-    <ion-card class="card3 cardexpand">
+    <ion-card class="card3 cardexpand" [hidden]="!prop.age">
       
       
 
@@ -111,7 +100,7 @@
           </ion-card>
 
           <!-- card 4 no expand-->
- <ion-card class="card4 cardnoexpand">
+ <ion-card class="card4 cardnoexpand"  [hidden]="prop.breed" (click)="toggle('breed')">
           
           
 
@@ -124,7 +113,7 @@
   
     <!-- card 4  expand-->
 
-    <ion-card class="card4 cardexpand">
+    <ion-card class="card4 cardexpand" [hidden]="!prop.breed">
       
       
 
@@ -141,7 +130,7 @@
           </ion-card>
 
             <!-- card 5 no expand-->
- <ion-card class="card5 cardnoexpand">
+ <ion-card class="card5 cardnoexpand"  [hidden]="prop.weight" (click)="toggle('weight')">
           
           
 
@@ -155,7 +144,7 @@
           
            <!-- card 5  expand-->
 
-    <ion-card class="card5 cardexpand">
+    <ion-card class="card5 cardexpand" [hidden]="!prop.weight">
       
       
 
@@ -179,7 +168,7 @@
       <h2 class="title" style="text-align: center">Friend Searching</h2>
          <!-- card 1 no expand-->
   
-         <ion-card class="card1 cardnoexpand">
+         <ion-card class="card1 cardnoexpand"  [hidden]="prop.size" (click)="toggle('size')">
           
           
 
@@ -193,7 +182,7 @@
       
               <!-- card 1  expand-->
       
-              <ion-card class="card1 cardexpand">
+              <ion-card class="card1 cardexpand" [hidden]="!prop.size">
                 
                 
       
@@ -223,7 +212,7 @@
                     </ion-card>
 
                       <!-- card 2 no expand-->
- <ion-card class="card2 cardnoexpand">
+ <ion-card class="card2 cardnoexpand"  [hidden]="prop.breed_match" (click)="toggle('breed_match')">
           
           
 
@@ -236,7 +225,7 @@
   
     <!-- card 2  expand-->
 
-    <ion-card class="card2 cardexpand">
+    <ion-card class="card2 cardexpand" [hidden]="!prop.breed_match">
       
       
 
@@ -254,7 +243,7 @@
 
 
           <!-- card 3 no expand-->
- <ion-card class="card3 cardnoexpand">
+ <ion-card class="card3 cardnoexpand"  [hidden]="prop.distance" (click)="toggle('distance')">
           
           
 
@@ -267,7 +256,7 @@
   
     <!-- card 3  expand-->
 
-    <ion-card class="card3 cardexpand">
+    <ion-card class="card3 cardexpand" [hidden]="!prop.distance">
       
       
 
