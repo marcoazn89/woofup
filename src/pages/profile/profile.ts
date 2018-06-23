@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
+import { DogService } from '../../providers';
 
 @IonicPage()
 @Component({
@@ -7,7 +8,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class ProfilePage {
 
-  constructor(public nav: NavController) {
+  constructor(private nav: NavController, private params: NavParams, private dogService: DogService) {
   }
 
   next() {
