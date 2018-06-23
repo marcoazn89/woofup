@@ -1,0 +1,106 @@
+.slide{
+    background-image: url("../assets/imgs/img1.png");
+    .swiper-slide {
+        overflow-y: scroll;
+        display: block;
+    }
+    p{
+        font-size:18px;
+    }
+    .title{
+        padding:48px 0 24px 0;
+        color: white;
+    }
+    .cardnoexpand{
+        height:64px;
+    }
+
+    .card1{
+        
+        border-radius:8px;
+        background-color:color($colors,primary);
+       
+    
+    }
+.item{
+ background-color: rgba(0,0,0,0);
+ span{
+     color:white;
+ }
+}
+    .info{
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center
+    }
+    .smallicon{
+        display:flex;
+        justify-content: center;
+    }
+
+
+    .text-input{
+        font-size:58px;
+        color:white;
+    }
+
+    .card2{
+        border-radius:8px;
+       
+        background-color:color($colors,secondary);
+        p{
+            color:white;
+           
+        }
+       
+    }
+    
+
+    .card3{
+        border-radius:8px;
+       
+        background-color:color($colors,new);
+        p{
+            color:white;
+           
+        }
+       
+    }
+    
+    .card4{
+        border-radius:8px;
+       
+        background-color:color($colors,new2);
+        p{
+            color:white;
+           
+        }
+       
+    }
+  
+    .card5{
+        border-radius:8px;
+       
+        background-color:color($colors,primary);
+        p{
+            color:white;
+           
+        }
+       
+    }
+       
+    }
+    .swiper-slide{
+        align-items: flex-start;
+    }
+    .cardnoexpand{
+        display:flex;
+        justify-content: space-between;
+        align-items: center
+    }
+    .icon{
+        color:white !important;
+    }
+
+   
