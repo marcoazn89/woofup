@@ -35,11 +35,11 @@ $container = $app->getContainer();
  * The class that deals with authentication
  */
 
-$container->register(new Roadbot\Libraries\ServiceProviders\LoggingServiceProvider());
+$container->register(new Woofup\Libraries\ServiceProviders\LoggingServiceProvider());
 
-$container->register(new Roadbot\Libraries\ServiceProviders\SecurityServiceProvider());
+$container->register(new Woofup\Libraries\ServiceProviders\SecurityServiceProvider());
 
-$container->register(new Roadbot\Libraries\ServiceProviders\StorageServiceProvider());
+$container->register(new Woofup\Libraries\ServiceProviders\StorageServiceProvider());
 
 /**
  * Client
@@ -65,16 +65,20 @@ $container['http-client'] = function () {
     return new GuzzleHttp\Client();
 };
 
-/**
+$container['profileCtrl'] = function($c) {
+    return new Woofup\Controllers\ProfileCtrl($c['logger']);
+};
+
+/**==
  * Common
  * All the common methods used by the system
  *
 $container['common'] = function($c) use ($app) {
-    return new Roadbot\Libraries\Common($app);
+    return new Woofup\Libraries\Common($app);
 };
 
 $container['token'] = function ($c) {
-    return new Roadbot\Controllers\Token($c);
+    return new Woofup\Controllers\Token($c);
 };
 	
 $container['fbwebhook'] = function ($c) {

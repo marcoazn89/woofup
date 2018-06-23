@@ -1,5 +1,5 @@
 <?php
-namespace Roadbot\Libraries\ServiceProviders;
+namespace Woofup\Libraries\ServiceProviders;
 
 use Pimple\{ServiceProviderInterface, Container};
 

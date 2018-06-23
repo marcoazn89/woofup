@@ -1,7 +1,7 @@
 <?php
-namespace Roadbot\Libraries\ServiceProviders;
+namespace Woofup\Libraries\ServiceProviders;
 
-use \Roadbot\Libraries\Repositories\AuthRepository;
+use \Woofup\Libraries\Repositories\AuthRepository;
 use \OAuth2Password\OAuth2;
 use \RouteProtection\Guard;
 
