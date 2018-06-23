@@ -1,0 +1,4 @@
+ssl-error.log[Sat Jun 23 10:51:28.707022 2018] [ssl:warn] [pid 1] AH01906: dev-api.woofupp.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Jun 23 10:51:28.711397 2018] [ssl:warn] [pid 1] AH01909: dev-api.woofupp.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sat Jun 23 10:51:28.775734 2018] [ssl:warn] [pid 1] AH01906: dev-api.woofupp.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Jun 23 10:51:28.790444 2018] [ssl:warn] [pid 1] AH01909: dev-api.woofupp.com:443:0 server certificate does NOT include an ID which matches the server name
