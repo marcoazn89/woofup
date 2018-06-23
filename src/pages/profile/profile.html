@@ -1,11 +1,11 @@
 <ion-content padding class="slide" >
 
        
-        <h2 class="title" style="text-align: center">WOOFUP</h2>
+        
     <ion-slides pager>
       <ion-slide>
             
-
+            <h2 class="title" style="text-align: center">Profile</h2>
         
          <!-- card 1 no expand-->
   
@@ -174,7 +174,131 @@
       <ion-slide>
       <!-- slide 2-->
      
-       
+      <h2 class="title" style="text-align: center">Friend Searching</h2>
+         <!-- card 1 no expand-->
+  
+         <ion-card class="card1 cardnoexpand">
+          
+          
+
+         
+                <h3 item-start padding-left>
+                  Size of Dog
+                </h3>
+                <ion-icon name="md-arrow-forward" item-end padding-right color="white"></ion-icon>
+              </ion-card>
+      
+      
+              <!-- card 1  expand-->
+      
+              <ion-card class="card1 cardexpand">
+                
+                
+      
+                      <div class="info" padding>
+      
+                          <div class="smallicon">
+                                  <img item-start padding src="../assets/imgs/icon1.png" height="31" width="31">
+                          
+                              </div>   
+                              <p padding text-center style="color:white">What size of dog you are looking for meetup?</p>
+                             
+                      </div>
+                      <ion-item>
+                            <ion-label>Big Dog</ion-label>
+                            <ion-radio value="golang" checked="true" color="white"></ion-radio>
+                          </ion-item>
+
+                          <ion-item>
+                                <ion-label>Medium Dog</ion-label>
+                                <ion-radio value="golang" checked="true" color="white"></ion-radio>
+                              </ion-item>
+
+                              <ion-item>
+                                    <ion-label>Small Dog</ion-label>
+                                    <ion-radio value="golang" checked="true" color="white"></ion-radio>
+                                  </ion-item>
+                    </ion-card>
+
+                      <!-- card 2 no expand-->
+ <ion-card class="card2 cardnoexpand">
+          
+          
+
+         
+        <h3 item-start padding-left>
+          Breed
+        </h3>
+        <ion-icon name="md-arrow-forward" item-end padding-right color="white"></ion-icon>
+      </ion-card>
+  
+    <!-- card 2  expand-->
+
+    <ion-card class="card2 cardexpand">
+      
+      
+
+            <div class="info" padding>
+
+                <div class="smallicon">
+                        <img item-start padding src="../assets/imgs/icon1.png" height="31" width="31">
+                
+                    </div>   
+                    <p padding text-center style="color:white">What's the Breed that you are looking for?</p>
+                    <ion-input placeholder="Text Input" text-center></ion-input>
+                    <ion-list></ion-list>
+            </div>
+          </ion-card>
+
+
+          <!-- card 3 no expand-->
+ <ion-card class="card3 cardnoexpand">
+          
+          
+
+         
+        <h3 item-start padding-left>
+          Distance
+        </h3>
+        <ion-icon name="md-arrow-forward" item-end padding-right color="white"></ion-icon>
+      </ion-card>
+  
+    <!-- card 3  expand-->
+
+    <ion-card class="card3 cardexpand">
+      
+      
+
+            <div class="info" padding>
+
+                <div class="smallicon">
+                        <img item-start padding src="../assets/imgs/icon1.png" height="31" width="31">
+                
+                    </div>   
+                    <p padding text-center style="color:white">How far from you? (Miles)</p>
+                    
+            </div>
+            <ion-item>
+                    <ion-range min="0" max="100" pin="true" [(ngModel)]="brightness" color="white">
+                      <ion-icon range-left small name="paw"></ion-icon>
+                      <ion-icon range-right name="paw"></ion-icon>
+                    </ion-range>
+                </ion-item>
+          </ion-card>
+
+
+            <!-- card 4 Button to Homepage-->
+ <ion-card class="card4 cardnoexpand">
+          
+          
+
+         
+        <h3 item-start padding-left>
+          Let's Start!
+        </h3>
+        <ion-icon name="md-arrow-forward" item-end padding-right color="white"></ion-icon>
+      </ion-card>
+
   
       </ion-slide>
       
