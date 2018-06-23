@@ -30,10 +30,10 @@ export class ProfilePage {
   }
 
   saveProfile() {
-      console.log(this.dog);
+      console.log(this.profile);
   }
 
-  next() {
+  viewFeed() {
     this.nav.push('FeedPage', {});
   }
 }
