@@ -35,3 +35,8 @@ UserInterfaceState.xcuserstate
 vendor/
 composer.lock
 /logs
+/www/assets
+/www/build
+/www/index.html
+/www/manifest.json
+/www/service-worker.js
