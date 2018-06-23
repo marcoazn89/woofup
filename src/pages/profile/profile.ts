@@ -11,6 +11,6 @@ export class ProfilePage {
   }
 
   next() {
-    this.nav.push('MatchingPage', {});
+    this.nav.push('FeedPage', {});
   }
 }

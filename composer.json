@@ -11,8 +11,6 @@
         "marcoazn89/oauth2-password-grant": "^1.0",
         "marcoazn89/route-protection": "dev-master",
         "marcoazn89/monolog-ignore-strategy": "1.0",
-        "marcoazn89/chat-flow": "dev-master",
-        "marcoazn89/messenger-api": "dev-master",
         "robmorgan/phinx": "0.5.1",
         "vlucas/phpdotenv": "2.0.1",
         "whichbrowser/parser": "^1.0",
