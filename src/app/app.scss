@@ -14,3 +14,30 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+@font-face{
+    font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Nunito.woff2') format('woff2');
+
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+  }
+
+h1, h2, {
+    font-family: 'San Francisco';
+    
+}
+
+h3, p {
+    font-family: 'Nunito';
+    
+}
+.button{
+    border-radius:8px;
+}
