@@ -1,0 +1,50 @@
+Profile API:
+- api/profile POST
+    params: name, gender, age, breed
+
+- api/match POST
+    params:
+
+- api/events GET
+    params: location
+    returns:
+    {
+        "matched_events": [
+            {
+                "id": 1000,
+                "title": "lalala",
+                "event_picture": "someurl",
+                "date": "Sat. Jun 16 6:00 PM",
+                "location": "somewhere",
+                "attendees": [
+                    {"id": 1, "picture": "picurl"}
+                ]
+            }
+        ],
+        "other_events": [
+        ]
+    }
+
+
+- api/events/{id} GET
+    returns:
+    {
+        "id": 1000,
+        "title": "lalala",
+        "event_picture": "someurl",
+        "date": "Sat. Jun 16 6:00 PM",
+        "location": "somewhere",
+        "attendees": [
+            {"id": 1, "picture": "picurl"}
+        ],
+        "pictures": ["url", "url"]
+            
+    }
+
+
+
+- api/events POST
+    params: title, description, picture
+
+- api/events/attend POST
+    params: attend (0 or 1)

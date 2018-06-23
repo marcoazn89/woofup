@@ -3,7 +3,6 @@
 
 *~
 *.sw[mnpcod]
-*.log
 *.tmp
 *.tmp.*
 log.txt
@@ -27,10 +26,17 @@ platforms/
 plugins/
 plugins/android.json
 plugins/ios.json
-www/
 $RECYCLE.BIN/
 
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
 .data/
+vendor/
+composer.lock
+/logs
+/www/assets
+/www/build
+/www/index.html
+/www/manifest.json
+/www/service-worker.js

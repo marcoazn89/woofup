@@ -3,14 +3,14 @@ import { IonicPage, NavController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  templateUrl: 'matching.html'
+  templateUrl: 'feed.html'
 })
-export class MatchingPage {
+export class FeedPage {
 
   constructor(public nav: NavController) {
   }
 
-  setupProfile() {
-    //this.nav.push('ProfilePage', {});
+  login(citizen) {
+    this.nav.push('FeedPage', {});
   }
 }

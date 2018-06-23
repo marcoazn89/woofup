@@ -21,16 +21,16 @@
   src: url('../assets/fonts/Nunito.woff2') format('woff2');
 
 }
-
 @font-face {
     font-family: "San Francisco";
-    font-style: normal;
     font-weight: 700;
-    src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
   }
 
-h1, h2, {
+h1, h2 {
     font-family: 'San Francisco';
+    font-weight: 900;
+
     
 }
 
