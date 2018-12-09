@@ -6,7 +6,7 @@ export default class ProfileDetailsScreen extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <Text>Profile details screen</Text>
+        <Text>Feed screen</Text>
       </View>
     );
   }
